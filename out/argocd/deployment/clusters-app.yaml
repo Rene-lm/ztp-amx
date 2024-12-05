@@ -14,7 +14,7 @@ spec:
     namespace: ztp-amx1
   project: ztp-app-project
   source:
-    path: out/argocd/example/siteconfig
+    path: out/SiteConfig
     repoURL: https://github.com/Rene-lm/ztp-amx.git
     targetRevision: master
     # uncomment the below plugin if you will be adding the plugin binaries in the same repo->dir where
