@@ -64,10 +64,10 @@ spec:
           interfaces:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:8C:14"
-            - name: "enp7s0f1"
+            - name: "enp4s0f1"
               macAddress: "00:90:FA:9A:78:FC"
             - name: "eno3"
-              macAddress: "ec:f4:bb:db:2b:c4"
+              macAddress: "ec:f4:bb:da:e0:1c"
           config:
             interfaces:
               - name: eno3
@@ -169,7 +169,7 @@ spec:
           interfaces:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:78:5C"
-            - name: "enp7s0f1"
+            - name: "enp4s0f1"
               macAddress: "00:90:FA:9A:78:BC"
             - name: "eno3"
               macAddress: "ec:f4:bb:da:e0:1c"
@@ -274,7 +274,7 @@ spec:
           interfaces:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:84:6C"
-            - name: "enp7s0f1"
+            - name: "enp4s0f1"
               macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
               macAddress: "ec:f4:bb:da:de:d4"
@@ -360,7 +360,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.104/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: ""00:90:FA:9A:76:5C"
+        bootMACAddress: "00:90:FA:9A:8C:14"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -378,11 +378,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:8E:B4"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:76:5C"
+              macAddress: "00:90:FA:9A:8C:14"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:78:FC"
             - name: "eno3"
-              macAddress: "ec:f4:bb:db:d0:64"
+              macAddress: "ec:f4:bb:db:2b:c4"
           config:
             interfaces:
               - name: eno3
@@ -465,7 +465,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.105/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:77:AC"
+        bootMACAddress: "00:90:FA:9A:78:5C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -483,11 +483,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:78:7C"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:77:AC"
+              macAddress: "00:90:FA:9A:78:5C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:78:BC"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:CA:64"
+              macAddress: "ec:f4:bb:da:e0:1c"
           config:
             interfaces:
               - name: eno3
@@ -570,7 +570,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.106/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:89:B4"
+        bootMACAddress: "00:90:FA:9A:84:6C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -588,11 +588,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:8A:B4"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:89:B4"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:CD:14"
+              macAddress: "ec:f4:bb:da:de:d4"
           config:
             interfaces:
               - name: eno3
@@ -675,7 +675,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.117/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:8A:94"
+        bootMACAddress: "00:90:FA:9A:8D:D4"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -694,10 +694,10 @@ spec:
           interfaces:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:8D:D4"
-            - name: "enp7s0f1"
+            - name: "enp4s0f1"
               macAddress: "00:90:FA:9A:8A:94"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:CA:1C"
+              macAddress: "ec:f4:bb:db:ca:1c"
           config:
             interfaces:
               - name: eno3
@@ -780,7 +780,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.70/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:90:74"
+        bootMACAddress: "00:90:FA:9A:93:88"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -799,7 +799,7 @@ spec:
           interfaces:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:93:88"
-            - name: "enp7s0f1"
+            - name: "enp4s0f1"
               macAddress: "00:90:FA:9A:90:74"
             - name: "eno3"
               macAddress: "ec:f4:bb:db:d1:5c"
@@ -885,7 +885,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.101/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: " 00:90:FA:9A:90:54"
+        bootMACAddress: "00:90:FA:9A:79:0C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -903,11 +903,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:91:E8"
-            - name: "enp7s0f1"
-              macAddress: " 00:90:FA:9A:90:54"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DA:8B:F4"
+              macAddress: "ec:f4:bb:da:de:d4"
           config:
             interfaces:
               - name: eno3
@@ -990,7 +990,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.102/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:8A:54"
+        bootMACAddress: ""
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -1008,11 +1008,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:8A:44"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:8A:54"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:CD:4C"
+              macAddress: "ec:f4:bb:da:de:d4"
           config:
             interfaces:
               - name: eno3
@@ -1095,7 +1095,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.103/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:8D:B4"
+        bootMACAddress: "00:90:FA:9A:79:0C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -1113,11 +1113,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:78:6C"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:8D:B4"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:2D:94"
+              macAddress: "ec:f4:bb:da:de:d4"
           config:
             interfaces:
               - name: eno3
@@ -1200,7 +1200,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.111/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:94:BA"
+        bootMACAddress: "00:90:FA:9A:79:0C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -1218,11 +1218,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:96:44"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:94:BA"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:CA:44"
+              macAddress: "ec:f4:bb:da:de:d4"
           config:
             interfaces:
               - name: eno3
@@ -1305,7 +1305,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.112/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:94:18"
+        bootMACAddress: "00:90:FA:9A:79:0C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -1323,11 +1323,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:96:F4"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:94:18"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:F1:A4"
+              macAddress: "ec:f4:bb:da:de:d4"
           config:
             interfaces:
               - name: eno3
@@ -1410,7 +1410,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.113/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:82:14"
+        bootMACAddress: "00:90:FA:9A:79:0C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         bootMode: "UEFI"
@@ -1428,11 +1428,11 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "00:90:FA:9A:82:04"
-            - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:82:14"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp4s0f1"
+              macAddress: "00:90:FA:9A:79:0C"
             - name: "eno3"
-              macAddress: "EC:F4:BB:DB:D2:64"
+              macAddress: "ec:f4:bb:da:de:d4"
           config:
             interfaces:
               - name: eno3

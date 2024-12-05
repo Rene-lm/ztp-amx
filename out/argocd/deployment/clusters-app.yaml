@@ -1,21 +1,21 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: clusters-sub
+  name: ztp-amx1
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: clusters
+  name: ztp-amx1
   namespace: openshift-gitops
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: clusters-sub
+    namespace: ztp-amx1
   project: ztp-app-project
   source:
-    path: ztp/gitops-subscriptions/argocd/example/siteconfig
-    repoURL: https://github.com/openshift-kni/cnf-features-deploy
+    path: ztp/gitops-subscription/argocd/example/siteconfig
+    repoURL: https://github.com/Rene-lm/ztp-amx.git
     targetRevision: master
     # uncomment the below plugin if you will be adding the plugin binaries in the same repo->dir where
     # the sitconfig.yaml exist AND use the ../../hack/patch-argocd-dev.sh script to re-patch the deployment-repo-server
