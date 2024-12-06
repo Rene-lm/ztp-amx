@@ -143,7 +143,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "master1.ztp-amx1.amx.com"
         role: "master"
@@ -248,7 +248,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "master2.ztp-amx1.amx.com"
         role: "master"
@@ -353,7 +353,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-0.ztp-amx1.amx.com"
         role: "worker"
@@ -458,7 +458,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-1.ztp-amx1.amx.com"
         role: "worker"
@@ -563,7 +563,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-2.ztp-amx1.amx.com"
         role: "worker"
@@ -668,7 +668,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-3.ztp-amx1.amx.com"
         role: "worker"
@@ -773,7 +773,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-4.ztp-amx1.amx.com"
         role: "worker"
@@ -878,7 +878,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-5.ztp-amx1.amx.com"
         role: "worker"
@@ -983,7 +983,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-6.ztp-amx1.amx.com"
         role: "worker"
@@ -1088,7 +1088,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-7.ztp-amx1.amx.com"
         role: "worker"
@@ -1193,7 +1193,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-8.ztp-amx1.amx.com"
         role: "worker"
@@ -1298,7 +1298,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-9.ztp-amx1.amx.com"
         role: "worker"
@@ -1403,7 +1403,7 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "worker-10.ztp-amx1.amx.com"
         role: "worker"
@@ -1508,4 +1508,4 @@ spec:
               config:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
-                  interface: bond0.233
+                  next-hop-interface: bond0.233
