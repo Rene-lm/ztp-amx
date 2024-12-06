@@ -896,7 +896,7 @@ spec:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:91:E8"
             - name: "enp7s0f1"
-              macAddress: " 00:90:FA:9A:90:54"
+              macAddress: "00:90:FA:9A:90:54"
             - name: "eno3"
               macAddress: "EC:F4:BB:DA:8B:F4"
           config:
