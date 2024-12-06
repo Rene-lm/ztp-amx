@@ -46,8 +46,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:78:FC"
-        bootMode: "UEFISecureBoot"  
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"  
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -150,8 +150,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:78:BC"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -254,8 +254,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:79:0C"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -358,8 +358,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:76:5C"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -462,8 +462,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:77:AC"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -566,8 +566,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:89:B4"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -670,8 +670,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:8A:94"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -774,8 +774,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:90:74"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -878,8 +878,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:90:54"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -982,8 +982,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:8A:54"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1086,8 +1086,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:8D:B4"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1190,8 +1190,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:94:BA"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1294,8 +1294,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:94:18"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1398,8 +1398,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:82:14"
-        bootMode: "UEFISecureBoot"
-        # Use UEFISecureBoot to enable secure boot for this node
+        bootMode: "UEFI"
+        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
