@@ -877,7 +877,7 @@ spec:
         bmcAddress: "idrac-virtualmedia+https://192.168.20.101/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: " 00:90:FA:9A:90:54"
+        bootMACAddress: "00:90:FA:9A:90:54"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
         nodeLabels:
