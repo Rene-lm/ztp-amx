@@ -6,7 +6,7 @@ metadata:
 spec:
   baseDomain: "amx.com"
   pullSecretRef:
-    name: "pull-secret"
+    name: "assisted-deployment-pull-secret"
   clusterImageSetNameRef: "openshift-4.14"
   sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMhXg/nJGNxkb0XTzu+asl7Q0iwLJFvkSzXXiUgJIDfyICnePgGOsdNawLtLkXai+JWNdYdgv9MLaHD85UEjN9/Dzd428Pl2lNjCnLAiYVOrzAQAnjmh8N+YLgUkS/U3iicpYyJRKv7RCnHK86+gaghU1xSyvIQ3y08ePmD3KP7A/qQ8GWAs3Qu/ohA8UwI6xFZvi32EUHyUOFu4SPwXlqUQ5LP4KV3IlwoilaVc11JXv0ijus1mvvrXqeCPD0tyy7RbLxOTt2d/Ndv0a4l1c7/HdWKcdyFXkdBOc6CpkzrMhnxBv3HIRVIgineVO6U1+6sdSeqJjRixCiBp5xxaMhg3nMkT/IYdv377VK0DfEZBlqHxgeMFR2O+FqTHeJbEMf2+tuCUhSsG1UQ9cODo1CgygnTbAIfCl97tuki6698dRJqNfC5xbzIlZADZgLO86s6vH/oPUQIt4bvrHywvSXXwA62oEXbhriUwkE1GuCJA4sCyZaRYNSi1C61KSYQOM= root@kvmpre01.mgmt-pre.amx.com"
   clusters:
@@ -48,7 +48,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:78:FC"
         bootMode: "UEFISecureBoot"  
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -153,7 +152,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:78:BC"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -258,7 +256,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:79:0C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -363,7 +360,6 @@ spec:
         bootMACAddress: ""00:90:FA:9A:76:5C"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -468,7 +464,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:77:AC"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -573,7 +568,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:89:B4"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -678,7 +672,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:8A:94"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -783,7 +776,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:90:74"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -888,7 +880,6 @@ spec:
         bootMACAddress: " 00:90:FA:9A:90:54"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -993,7 +984,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:8A:54"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1098,7 +1088,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:8D:B4"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1203,7 +1192,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:94:BA"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1308,7 +1296,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:94:18"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
@@ -1413,7 +1400,6 @@ spec:
         bootMACAddress: "00:90:FA:9A:82:14"
         bootMode: "UEFISecureBoot"
         # Use UEFISecureBoot to enable secure boot for this node
-        bootMode: "UEFI"
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: "true"
         rootDeviceHints:
