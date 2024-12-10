@@ -50,9 +50,9 @@ spec:
         bootMode: "UEFI"  
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -155,9 +155,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -260,9 +260,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -365,9 +365,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -470,9 +470,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -575,9 +575,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -680,9 +680,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -785,9 +785,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -890,9 +890,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -995,9 +995,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -1100,9 +1100,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -1205,9 +1205,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -1310,9 +1310,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
@@ -1415,9 +1415,9 @@ spec:
         bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: "true"
-        rootDeviceHints:
-          deviceName: "/dev/sda"
+          cluster.ocs.openshift.io/openshift-storage: ""
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
         #diskPartition:
         #  - device: /dev/sda
