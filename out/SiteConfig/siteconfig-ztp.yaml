@@ -42,6 +42,7 @@ spec:
     nodes:
       - hostName: "master0.ztp-amx1.amx.com"
         role: "master"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.81/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -146,6 +147,7 @@ spec:
 ############################################################
       - hostName: "master1.ztp-amx1.amx.com"
         role: "master"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.82/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -250,6 +252,7 @@ spec:
 ############################################################
       - hostName: "master2.ztp-amx1.amx.com"
         role: "master"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.83/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -354,6 +357,7 @@ spec:
 ############################################################
       - hostName: "worker-0.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.104/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -458,6 +462,7 @@ spec:
 ############################################################
       - hostName: "worker-1.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.105/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -562,6 +567,7 @@ spec:
 ############################################################
       - hostName: "worker-2.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.106/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -666,6 +672,7 @@ spec:
 ############################################################
       - hostName: "worker-3.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.117/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -770,6 +777,7 @@ spec:
 ############################################################
       - hostName: "worker-4.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.70/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -874,6 +882,7 @@ spec:
 ############################################################
       - hostName: "worker-5.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.101/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -978,6 +987,7 @@ spec:
 ############################################################
       - hostName: "worker-6.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.102/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -1082,6 +1092,7 @@ spec:
 ############################################################
       - hostName: "worker-7.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.103/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -1186,6 +1197,7 @@ spec:
 ############################################################
       - hostName: "worker-8.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.111/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -1290,6 +1302,7 @@ spec:
 ############################################################
       - hostName: "worker-9.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.112/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -1394,6 +1407,7 @@ spec:
 ############################################################
       - hostName: "worker-10.ztp-amx1.amx.com"
         role: "worker"
+        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.113/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
