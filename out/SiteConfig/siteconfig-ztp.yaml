@@ -223,7 +223,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.74
-                    prefix:x-length 26
+                    prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
                 state: up
@@ -292,7 +292,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.11
-                    prefixix-length: 27
+                    prefix-length: 27
                   enabled: true
                 ipv6:
                   enabled: false
@@ -397,7 +397,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.12
-                    prefixx-length: 27
+                    prefix-length: 27
                   enabled: true
                 ipv6:
                   enabled: false
@@ -433,7 +433,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.76
-                    prefixx-length: 26
+                    prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
                 state: up
@@ -502,7 +502,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.13
-                    prefixx-length: 27
+                    prefix-length: 27
                   enabled: true
                 ipv6:
                   enabled: false
@@ -607,7 +607,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.14
-                    prefixx-length: 27
+                    prefix-length: 27
                   enabled: true
                 ipv6:
                   enabled: false
@@ -643,7 +643,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.78
-                    prefixx-length: 26
+                    prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
                 state: up
@@ -712,7 +712,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.15
-                    prefixx-length: 27
+                    prefix-length: 27
                   enabled: true
                 ipv6:
                   enabled: false
@@ -748,7 +748,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.79
-                    prefixx-length: 26
+                    prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
                 state: up
@@ -817,7 +817,7 @@ spec:
                   dhcp: false
                   address:
                   - ip: 192.168.26.16
-                    prefixx-length: 27
+                    prefix-length: 27
                   enabled: true
                 ipv6:
                   enabled: false
