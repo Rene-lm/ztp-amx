@@ -102,9 +102,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233 
                 type: bond
                 state: up
@@ -207,9 +207,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -312,9 +312,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -417,9 +417,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -522,9 +522,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -627,9 +627,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -732,9 +732,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -837,9 +837,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -942,9 +942,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -957,7 +957,7 @@ spec:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.26.75
+                  - ip: 192.168.26.86
                     prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
@@ -1047,9 +1047,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -1062,7 +1062,7 @@ spec:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.26.75
+                  - ip: 192.168.26.87
                     prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
@@ -1152,9 +1152,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -1167,7 +1167,7 @@ spec:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.26.75
+                  - ip: 192.168.26.88
                     prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
@@ -1257,9 +1257,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -1272,7 +1272,7 @@ spec:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.26.75
+                  - ip: 192.168.26.89
                     prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
@@ -1362,9 +1362,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -1377,7 +1377,7 @@ spec:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.26.75
+                  - ip: 192.168.26.90
                     prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
@@ -1467,9 +1467,9 @@ spec:
                   mode: 802.3ad
                   options:
                     miimon: 100
-                port:
-                - enp5s0f1
-                - enp4s0f1
+                  port:
+                  - enp5s0f1
+                  - enp4s0f1
               - name: bond0.233
                 type: bond
                 state: up
@@ -1482,7 +1482,7 @@ spec:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.26.75
+                  - ip: 192.168.26.91
                     prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
