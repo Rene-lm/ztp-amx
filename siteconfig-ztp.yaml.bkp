@@ -7,7 +7,7 @@ spec:
   baseDomain: "amx.com"
   pullSecretRef:
     name: "assisted-deployment-pull-secret"
-  clusterImageSetNameRef: "img4.14.15-x86-64-appsub"
+  clusterImageSetNameRef: "img4.14.34-x86-64-appsub"
   sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMhXg/nJGNxkb0XTzu+asl7Q0iwLJFvkSzXXiUgJIDfyICnePgGOsdNawLtLkXai+JWNdYdgv9MLaHD85UEjN9/Dzd428Pl2lNjCnLAiYVOrzAQAnjmh8N+YLgUkS/U3iicpYyJRKv7RCnHK86+gaghU1xSyvIQ3y08ePmD3KP7A/qQ8GWAs3Qu/ohA8UwI6xFZvi32EUHyUOFu4SPwXlqUQ5LP4KV3IlwoilaVc11JXv0ijus1mvvrXqeCPD0tyy7RbLxOTt2d/Ndv0a4l1c7/HdWKcdyFXkdBOc6CpkzrMhnxBv3HIRVIgineVO6U1+6sdSeqJjRixCiBp5xxaMhg3nMkT/IYdv377VK0DfEZBlqHxgeMFR2O+FqTHeJbEMf2+tuCUhSsG1UQ9cODo1CgygnTbAIfCl97tuki6698dRJqNfC5xbzIlZADZgLO86s6vH/oPUQIt4bvrHywvSXXwA62oEXbhriUwkE1GuCJA4sCyZaRYNSi1C61KSYQOM= root@kvmpre01.mgmt-pre.amx.com"
   clusters:
   - clusterName: "ztp-amx1"
