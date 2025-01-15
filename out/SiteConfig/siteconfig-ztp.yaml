@@ -360,4 +360,3 @@ spec:
                 - destination: 0.0.0.0/0
                   next-hop-address: 10.1.198.46
                   next-hop-interface: bond0.233
-############################################################
