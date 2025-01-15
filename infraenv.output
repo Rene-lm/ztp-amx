@@ -1,0 +1,59 @@
+apiVersion: v1
+items:
+- apiVersion: agent-install.openshift.io/v1beta1
+  kind: InfraEnv
+  metadata:
+    annotations:
+      argocd.argoproj.io/sync-wave: "1"
+      infraenv.agent-install.openshift.io/enable-ironic-agent: "true"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"agent-install.openshift.io/v1beta1","kind":"InfraEnv","metadata":{"annotations":{"argocd.argoproj.io/sync-wave":"1","ran.openshift.io/ztp-gitops-generated":"{}"},"labels":{"app.kubernetes.io/instance":"ztp-amx1"},"name":"ztp-amx1","namespace":"ztp-amx1"},"spec":{"additionalNTPSources":["192.168.19.10"],"clusterRef":{"name":"ztp-amx1","namespace":"ztp-amx1"},"nmStateConfigLabelSelector":{"matchLabels":{"nmstate-label":"ztp-amx1"}},"pullSecretRef":{"name":"assisted-deployment-pull-secret"},"sshAuthorizedKey":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMhXg/nJGNxkb0XTzu+asl7Q0iwLJFvkSzXXiUgJIDfyICnePgGOsdNawLtLkXai+JWNdYdgv9MLaHD85UEjN9/Dzd428Pl2lNjCnLAiYVOrzAQAnjmh8N+YLgUkS/U3iicpYyJRKv7RCnHK86+gaghU1xSyvIQ3y08ePmD3KP7A/qQ8GWAs3Qu/ohA8UwI6xFZvi32EUHyUOFu4SPwXlqUQ5LP4KV3IlwoilaVc11JXv0ijus1mvvrXqeCPD0tyy7RbLxOTt2d/Ndv0a4l1c7/HdWKcdyFXkdBOc6CpkzrMhnxBv3HIRVIgineVO6U1+6sdSeqJjRixCiBp5xxaMhg3nMkT/IYdv377VK0DfEZBlqHxgeMFR2O+FqTHeJbEMf2+tuCUhSsG1UQ9cODo1CgygnTbAIfCl97tuki6698dRJqNfC5xbzIlZADZgLO86s6vH/oPUQIt4bvrHywvSXXwA62oEXbhriUwkE1GuCJA4sCyZaRYNSi1C61KSYQOM= root@kvmpre01.mgmt-pre.amx.com"}}
+      ran.openshift.io/ztp-gitops-generated: '{}'
+    creationTimestamp: "2024-12-20T18:14:33Z"
+    finalizers:
+    - infraenv.agent-install.openshift.io/ai-deprovision
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: ztp-amx1
+    name: ztp-amx1
+    namespace: ztp-amx1
+    resourceVersion: "152502796"
+    uid: ab956187-5333-4895-91f6-f6229a2cf5f4
+  spec:
+    additionalNTPSources:
+    - 192.168.19.10
+    clusterRef:
+      name: ztp-amx1
+      namespace: ztp-amx1
+    cpuArchitecture: x86_64
+    ipxeScriptType: DiscoveryImageAlways
+    nmStateConfigLabelSelector:
+      matchLabels:
+        nmstate-label: ztp-amx1
+    pullSecretRef:
+      name: assisted-deployment-pull-secret
+    sshAuthorizedKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMhXg/nJGNxkb0XTzu+asl7Q0iwLJFvkSzXXiUgJIDfyICnePgGOsdNawLtLkXai+JWNdYdgv9MLaHD85UEjN9/Dzd428Pl2lNjCnLAiYVOrzAQAnjmh8N+YLgUkS/U3iicpYyJRKv7RCnHK86+gaghU1xSyvIQ3y08ePmD3KP7A/qQ8GWAs3Qu/ohA8UwI6xFZvi32EUHyUOFu4SPwXlqUQ5LP4KV3IlwoilaVc11JXv0ijus1mvvrXqeCPD0tyy7RbLxOTt2d/Ndv0a4l1c7/HdWKcdyFXkdBOc6CpkzrMhnxBv3HIRVIgineVO6U1+6sdSeqJjRixCiBp5xxaMhg3nMkT/IYdv377VK0DfEZBlqHxgeMFR2O+FqTHeJbEMf2+tuCUhSsG1UQ9cODo1CgygnTbAIfCl97tuki6698dRJqNfC5xbzIlZADZgLO86s6vH/oPUQIt4bvrHywvSXXwA62oEXbhriUwkE1GuCJA4sCyZaRYNSi1C61KSYQOM=
+      root@kvmpre01.mgmt-pre.amx.com
+  status:
+    agentLabelSelector:
+      matchLabels:
+        infraenvs.agent-install.openshift.io: ztp-amx1
+    bootArtifacts:
+      initrd: https://assisted-image-service-multicluster-engine.apps.mgmt-pre.amx.com/images/15c3a9be-80a8-4ae3-bdeb-17c1549618b2/pxe-initrd?api_key=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZyYV9lbnZfaWQiOiIxNWMzYTliZS04MGE4LTRhZTMtYmRlYi0xN2MxNTQ5NjE4YjIifQ._HThhXXc9bA2AAUP9m0OmW3zKJpKqbQXV-zmZX96JqS-tfxWMT6m7YmiOzuJG7ghrQsU_feTEGzFBa2cl_X5FA&arch=x86_64&version=4.14
+      ipxeScript: https://assisted-service-multicluster-engine.apps.mgmt-pre.amx.com/api/assisted-install/v2/infra-envs/15c3a9be-80a8-4ae3-bdeb-17c1549618b2/downloads/files?api_key=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZyYV9lbnZfaWQiOiIxNWMzYTliZS04MGE4LTRhZTMtYmRlYi0xN2MxNTQ5NjE4YjIifQ.4HpjZHbUH3334dgxThNdVQHeRKJGGyYMWmNwSIeb1BMqJ_fZ0iDofcs8p7vIMNIenSLjmZPJl7qwmm-JdbPADg&file_name=ipxe-script
+      kernel: https://assisted-image-service-multicluster-engine.apps.mgmt-pre.amx.com/boot-artifacts/kernel?arch=x86_64&version=4.14
+      rootfs: https://assisted-image-service-multicluster-engine.apps.mgmt-pre.amx.com/boot-artifacts/rootfs?arch=x86_64&version=4.14
+    conditions:
+    - lastTransitionTime: "2024-12-20T18:14:34Z"
+      message: Image has been created
+      reason: ImageCreated
+      status: "True"
+      type: ImageCreated
+    createdTime: "2024-12-20T18:14:44Z"
+    debugInfo:
+      eventsURL: https://assisted-service-multicluster-engine.apps.mgmt-pre.amx.com/api/assisted-install/v2/events?api_key=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZyYV9lbnZfaWQiOiIxNWMzYTliZS04MGE4LTRhZTMtYmRlYi0xN2MxNTQ5NjE4YjIifQ.8R6gWdXl59QT6ZcS8_k2kk_YJZNDBi-is5boAO4Ve4PCmtRLw0_fhshODhU7MqJ3vRXmecGY-z7MY5oThFOanQ&infra_env_id=15c3a9be-80a8-4ae3-bdeb-17c1549618b2
+      staticNetworkDownloadURL: https://assisted-service-multicluster-engine.apps.mgmt-pre.amx.com/api/assisted-install/v2/infra-envs/15c3a9be-80a8-4ae3-bdeb-17c1549618b2/downloads/files?api_key=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbHVzdGVyX2lkIjoiMTVjM2E5YmUtODBhOC00YWUzLWJkZWItMTdjMTU0OTYxOGIyIn0.fJ1DUnH_X9B_DyLcX56sp4fo8vwxZVafiZV66I79S6NDMvGh9l7rVjZ53Cl_jtPePk7ClYH3MnoHuHViHgc79A&file_name=static-network-config
+    isoDownloadURL: https://assisted-image-service-multicluster-engine.apps.mgmt-pre.amx.com/byapikey/eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZyYV9lbnZfaWQiOiIxNWMzYTliZS04MGE4LTRhZTMtYmRlYi0xN2MxNTQ5NjE4YjIifQ.YusDAWxQMZh4pCiNhli8WBUKGJMWYXfl-Eym3hIOVhmcsWQHBXJv--u6U7L4IL5AMkodVS9BrGm31Z5_ncsxCA/4.14/x86_64/minimal.iso
+kind: List
+metadata:
+  resourceVersion: ""

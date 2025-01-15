@@ -1,0 +1,200 @@
+apiVersion: v1
+items:
+- apiVersion: extensions.hive.openshift.io/v1beta1
+  kind: AgentClusterInstall
+  metadata:
+    annotations:
+      agent-install.openshift.io/install-config-overrides: '{"networking":{"networkType":"OVNKubernetes"}}'
+      argocd.argoproj.io/sync-wave: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"extensions.hive.openshift.io/v1beta1","kind":"AgentClusterInstall","metadata":{"annotations":{"agent-install.openshift.io/install-config-overrides":"{\"networking\":{\"networkType\":\"OVNKubernetes\"}}","argocd.argoproj.io/sync-wave":"1","ran.openshift.io/ztp-gitops-generated":"{}"},"labels":{"app.kubernetes.io/instance":"ztp-amx1"},"name":"ztp-amx1","namespace":"ztp-amx1"},"spec":{"apiVIP":"192.168.26.69","apiVIPs":["192.168.26.69"],"clusterDeploymentRef":{"name":"ztp-amx1"},"imageSetRef":{"name":"img4.14.15-x86-64-appsub"},"ingressVIP":"192.168.26.70","ingressVIPs":["192.168.26.70"],"manifestsConfigMapRef":{"name":"ztp-amx1"},"networking":{"clusterNetwork":[{"cidr":"10.128.0.0/14","hostPrefix":23}],"machineNetwork":[{"cidr":"192.168.26.64/26"}],"serviceNetwork":["172.30.0.0/16"]},"provisionRequirements":{"controlPlaneAgents":3,"workerAgents":11},"sshPublicKey":"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMhXg/nJGNxkb0XTzu+asl7Q0iwLJFvkSzXXiUgJIDfyICnePgGOsdNawLtLkXai+JWNdYdgv9MLaHD85UEjN9/Dzd428Pl2lNjCnLAiYVOrzAQAnjmh8N+YLgUkS/U3iicpYyJRKv7RCnHK86+gaghU1xSyvIQ3y08ePmD3KP7A/qQ8GWAs3Qu/ohA8UwI6xFZvi32EUHyUOFu4SPwXlqUQ5LP4KV3IlwoilaVc11JXv0ijus1mvvrXqeCPD0tyy7RbLxOTt2d/Ndv0a4l1c7/HdWKcdyFXkdBOc6CpkzrMhnxBv3HIRVIgineVO6U1+6sdSeqJjRixCiBp5xxaMhg3nMkT/IYdv377VK0DfEZBlqHxgeMFR2O+FqTHeJbEMf2+tuCUhSsG1UQ9cODo1CgygnTbAIfCl97tuki6698dRJqNfC5xbzIlZADZgLO86s6vH/oPUQIt4bvrHywvSXXwA62oEXbhriUwkE1GuCJA4sCyZaRYNSi1C61KSYQOM= root@kvmpre01.mgmt-pre.amx.com"}}
+      ran.openshift.io/ztp-gitops-generated: '{}'
+    creationTimestamp: "2024-12-20T17:02:12Z"
+    finalizers:
+    - agentclusterinstall.agent-install.openshift.io/ai-deprovision
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: ztp-amx1
+    name: ztp-amx1
+    namespace: ztp-amx1
+    ownerReferences:
+    - apiVersion: hive.openshift.io/v1
+      kind: ClusterDeployment
+      name: ztp-amx1
+      uid: 572f095e-e465-4473-8196-dd48c3de9693
+    resourceVersion: "152449317"
+    uid: bd3fe7a2-74c9-436c-b14c-7ffa76b5e447
+  spec:
+    apiVIP: 192.168.26.69
+    apiVIPs:
+    - 192.168.26.69
+    clusterDeploymentRef:
+      name: ztp-amx1
+    imageSetRef:
+      name: img4.14.15-x86-64-appsub
+    ingressVIP: 192.168.26.70
+    ingressVIPs:
+    - 192.168.26.70
+    manifestsConfigMapRef:
+      name: ztp-amx1
+    networking:
+      clusterNetwork:
+      - cidr: 10.128.0.0/14
+        hostPrefix: 23
+      machineNetwork:
+      - cidr: 192.168.26.64/26
+      serviceNetwork:
+      - 172.30.0.0/16
+      userManagedNetworking: false
+    provisionRequirements:
+      controlPlaneAgents: 3
+      workerAgents: 11
+    sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMhXg/nJGNxkb0XTzu+asl7Q0iwLJFvkSzXXiUgJIDfyICnePgGOsdNawLtLkXai+JWNdYdgv9MLaHD85UEjN9/Dzd428Pl2lNjCnLAiYVOrzAQAnjmh8N+YLgUkS/U3iicpYyJRKv7RCnHK86+gaghU1xSyvIQ3y08ePmD3KP7A/qQ8GWAs3Qu/ohA8UwI6xFZvi32EUHyUOFu4SPwXlqUQ5LP4KV3IlwoilaVc11JXv0ijus1mvvrXqeCPD0tyy7RbLxOTt2d/Ndv0a4l1c7/HdWKcdyFXkdBOc6CpkzrMhnxBv3HIRVIgineVO6U1+6sdSeqJjRixCiBp5xxaMhg3nMkT/IYdv377VK0DfEZBlqHxgeMFR2O+FqTHeJbEMf2+tuCUhSsG1UQ9cODo1CgygnTbAIfCl97tuki6698dRJqNfC5xbzIlZADZgLO86s6vH/oPUQIt4bvrHywvSXXwA62oEXbhriUwkE1GuCJA4sCyZaRYNSi1C61KSYQOM=
+      root@kvmpre01.mgmt-pre.amx.com
+  status:
+    apiVIP: 192.168.26.69
+    apiVIPs:
+    - 192.168.26.69
+    conditions:
+    - lastProbeTime: "2024-12-20T17:02:12Z"
+      lastTransitionTime: "2024-12-20T17:02:12Z"
+      message: SyncOK
+      reason: SyncOK
+      status: "True"
+      type: SpecSynced
+    - lastProbeTime: "2024-12-20T17:02:12Z"
+      lastTransitionTime: "2024-12-20T17:02:12Z"
+      message: The cluster is not ready to begin the installation
+      reason: ClusterNotReady
+      status: "False"
+      type: RequirementsMet
+    - lastProbeTime: "2024-12-20T17:18:07Z"
+      lastTransitionTime: "2024-12-20T17:18:07Z"
+      message: 'The cluster''s validations are pending for user: Clusters must have
+        exactly 3 dedicated control plane nodes. Add or remove hosts, or change their
+        roles configurations to meet the requirement.,Hosts have not been discovered
+        yet,Hosts have not been discovered yet,Hosts have not been discovered yet,Hosts
+        have not been discovered yet,At least one of the CIDRs (Machine Network, Cluster
+        Network, Service Network) is undefined.,At least one of the CIDRs (Machine
+        Network, Cluster Network, Service Network) is undefined.'
+      reason: ValidationsUserPending
+      status: "False"
+      type: Validated
+    - lastProbeTime: "2024-12-20T17:02:12Z"
+      lastTransitionTime: "2024-12-20T17:02:12Z"
+      message: The installation has not yet started
+      reason: InstallationNotStarted
+      status: "False"
+      type: Completed
+    - lastProbeTime: "2024-12-20T17:02:12Z"
+      lastTransitionTime: "2024-12-20T17:02:12Z"
+      message: The installation has not failed
+      reason: InstallationNotFailed
+      status: "False"
+      type: Failed
+    - lastProbeTime: "2024-12-20T17:02:12Z"
+      lastTransitionTime: "2024-12-20T17:02:12Z"
+      message: The installation is waiting to start or in progress
+      reason: InstallationNotStopped
+      status: "False"
+      type: Stopped
+    - lastProbeTime: "2024-12-20T17:02:12Z"
+      lastTransitionTime: "2024-12-20T17:02:12Z"
+      reason: Cluster preparation has never been performed for this cluster
+      status: "False"
+      type: LastInstallationPreparationFailed
+    connectivityMajorityGroups: '{"majority_groups":{"IPv4":[],"IPv6":[]},"l3_connected_addresses":{}}'
+    debugInfo:
+      eventsURL: https://assisted-service-multicluster-engine.apps.mgmt-pre.amx.com/api/assisted-install/v2/events?api_key=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbHVzdGVyX2lkIjoiZjQzZjVmZjItNDczOS00Zjk1LWJiMmEtZWQ1MDk5ZDQzNmUyIn0.7Om0hp5wpZ8nyvGaHwpEnCsRpOeMg8pOBrrgrrJ0u-4p-VOAlOfefGGypXz6V7w8bBbydb3amXbJC7924Xs-_g&cluster_id=f43f5ff2-4739-4f95-bb2a-ed5099d436e2
+      logsURL: ""
+      state: pending-for-input
+      stateInfo: User input required
+    ingressVIP: 192.168.26.70
+    ingressVIPs:
+    - 192.168.26.70
+    machineNetwork:
+    - cidr: 192.168.26.64/26
+    platformType: BareMetal
+    progress:
+      totalPercentage: 0
+    userManagedNetworking: false
+    validationsInfo:
+      configuration:
+      - id: platform-requirements-satisfied
+        message: Platform requirements satisfied
+        status: success
+      - id: pull-secret-set
+        message: The pull secret is set.
+        status: success
+      hosts-data:
+      - id: all-hosts-are-ready-to-install
+        message: All hosts in the cluster are ready to install.
+        status: success
+      - id: sufficient-masters-count
+        message: Clusters must have exactly 3 dedicated control plane nodes. Add or
+          remove hosts, or change their roles configurations to meet the requirement.
+        status: failure
+      network:
+      - id: api-vips-defined
+        message: API virtual IPs are defined.
+        status: success
+      - id: api-vips-valid
+        message: Hosts have not been discovered yet
+        status: pending
+      - id: cluster-cidr-defined
+        message: The Cluster Network CIDR is defined.
+        status: success
+      - id: dns-domain-defined
+        message: The base domain is defined.
+        status: success
+      - id: ingress-vips-defined
+        message: Ingress virtual IPs are defined.
+        status: success
+      - id: ingress-vips-valid
+        message: Hosts have not been discovered yet
+        status: pending
+      - id: machine-cidr-defined
+        message: Hosts have not been discovered yet
+        status: pending
+      - id: machine-cidr-equals-to-calculated-cidr
+        message: Hosts have not been discovered yet
+        status: pending
+      - id: network-prefix-valid
+        message: The Cluster Network prefix is valid.
+        status: success
+      - id: network-type-valid
+        message: The cluster has a valid network type
+        status: success
+      - id: networks-same-address-families
+        message: At least one of the CIDRs (Machine Network, Cluster Network, Service
+          Network) is undefined.
+        status: pending
+      - id: no-cidrs-overlapping
+        message: At least one of the CIDRs (Machine Network, Cluster Network, Service
+          Network) is undefined.
+        status: pending
+      - id: ntp-server-configured
+        message: No ntp problems found
+        status: success
+      - id: service-cidr-defined
+        message: The Service Network CIDR is defined.
+        status: success
+      operators:
+      - id: cnv-requirements-satisfied
+        message: cnv is disabled
+        status: success
+      - id: lso-requirements-satisfied
+        message: lso is disabled
+        status: success
+      - id: lvm-requirements-satisfied
+        message: lvm is disabled
+        status: success
+      - id: mce-requirements-satisfied
+        message: mce is disabled
+        status: success
+      - id: odf-requirements-satisfied
+        message: odf is disabled
+        status: success
+kind: List
+metadata:
+  resourceVersion: ""
