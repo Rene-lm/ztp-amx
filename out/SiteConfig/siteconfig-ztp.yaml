@@ -47,7 +47,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:78:FC"
-        bootMode: "UEFI"  
+        bootMode: "UEFISecureBoot"  
+        #bootMode: "UEFI"  
         # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
@@ -154,7 +155,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:78:BC"
-        bootMode: "UEFI"
+        bootMode: ""UEFISecureBoot""
+        #bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
@@ -261,7 +263,8 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:79:0C"
-        bootMode: "UEFI"
+        bootMode: ""UEFISecureBoot""
+        #bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
