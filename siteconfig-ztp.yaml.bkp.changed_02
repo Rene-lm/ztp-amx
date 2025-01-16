@@ -43,7 +43,7 @@ spec:
       - hostName: "master0.ztp-amx1.amx.com"
         role: "master"
         vendor: Dell
-        bmcAddress: "idrac-virtualmedia://192.168.20.81/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia+https://192.168.20.81/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:78:FC"
@@ -150,7 +150,7 @@ spec:
       - hostName: "master1.ztp-amx1.amx.com"
         role: "master"
         vendor: Dell
-        bmcAddress: "idrac-virtualmedia://192.168.20.82/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia+https://192.168.20.82/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:78:BC"
@@ -257,7 +257,7 @@ spec:
       - hostName: "master2.ztp-amx1.amx.com"
         role: "master"
         vendor: Dell
-        bmcAddress: "idrac-virtualmedia://192.168.20.83/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia+https://192.168.20.83/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:79:0C"
