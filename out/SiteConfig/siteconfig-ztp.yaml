@@ -47,7 +47,7 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:8A:94"
-        bootMode: "UEFISecureBoot"  
+        bootMode: "legacy"  
         #bootMode: "UEFI"  
         # Use UEFI to enable secure boot for this node
         nodeLabels:
@@ -155,7 +155,7 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:78:BC"
-        bootMode: "UEFISecureBoot"
+        bootMode: "legacy"
         #bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
@@ -263,7 +263,7 @@ spec:
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:79:0C"
-        bootMode: "UEFISecureBoot"
+        bootMode: "legacy"
         #bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
