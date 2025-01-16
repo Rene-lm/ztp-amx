@@ -43,10 +43,10 @@ spec:
       - hostName: "master0.ztp-amx1.amx.com"
         role: "master"
         vendor: Dell
-        bmcAddress: "idrac-virtualmedia://192.168.20.81/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia://192.168.20.104/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:78:FC"
+        bootMACAddress: "00:90:FA:9A:76:5C"
         bootMode: "UEFISecureBoot"  
         #bootMode: "UEFI"  
         # Use UEFI to enable secure boot for this node
@@ -66,7 +66,7 @@ spec:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:8C:14"
             - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:78:FC"
+              macAddress: "00:90:FA:9A:76:5C"
             - name: "eno3"
               macAddress: "ec:f4:bb:db:2b:c4"
           config:
