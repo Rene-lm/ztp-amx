@@ -26,14 +26,11 @@ items:
 - apiVersion: agent-install.openshift.io/v1beta1
   kind: AgentServiceConfig
   metadata:
-    creationTimestamp: "2024-12-05T15:23:44Z"
     finalizers:
     - agentserviceconfig.agent-install.openshift.io/local-cluster-import-deprovision
     - agentserviceconfig.agent-install.openshift.io/ai-deprovision
     generation: 4
     name: agent
-    resourceVersion: "135074143"
-    uid: 69d565f4-30ec-47e2-9117-159c698864ff
   spec:
     databaseStorage:
       accessModes:
@@ -56,23 +53,6 @@ items:
         requests:
           storage: 100Gi
       storageClassName: image
-  status:
-    conditions:
-    - lastTransitionTime: "2024-12-05T15:23:45Z"
-      message: Local cluster import is not enabled
-      reason: Local cluster import is not enabled
-      status: "False"
-      type: LocalClusterManaged
-    - lastTransitionTime: "2024-12-05T15:23:45Z"
-      message: AgentServiceConfig reconcile completed without error.
-      reason: ReconcileSucceeded
-      status: "True"
-      type: ReconcileCompleted
-    - lastTransitionTime: "2024-12-05T15:23:45Z"
-      message: Deployment assisted-service is not available
-      reason: DeploymentFailure
-      status: "False"
-      type: DeploymentsHealthy
 kind: List
 metadata:
   resourceVersion: ""

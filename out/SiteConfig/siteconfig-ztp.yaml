@@ -43,10 +43,10 @@ spec:
       - hostName: "master0.ztp-amx1.amx.com"
         role: "master"
         vendor: Dell
-        bmcAddress: "idrac-virtualmedia://192.168.20.117/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia://192.168.20.101/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:8A:94"
+        bootMACAddress: "00:90:FA:9A:90:54"
         bootMode: "UEFI"  
         #bootMode: "UEFI"  
         # Use UEFI to enable secure boot for this node
@@ -66,7 +66,7 @@ spec:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:8C:14"
             - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:8A:94"
+              macAddress: "00:90:FA:9A:90:54"
             - name: "eno3"
               macAddress: "ec:f4:bb:db:2b:c4"
           config:
@@ -151,10 +151,10 @@ spec:
       - hostName: "master1.ztp-amx1.amx.com"
         role: "master"
         vendor: Dell
-        bmcAddress: "idrac-virtualmedia://192.168.20.82/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia://192.168.20.102/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:78:BC"
+        bootMACAddress: "00:90:FA:9A:8A:54"
         bootMode: "UEFI"
         #bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
@@ -174,7 +174,7 @@ spec:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:78:5C"
             - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:78:BC"
+              macAddress: "00:90:FA:9A:8A:54"
             - name: "eno3"
               macAddress: "ec:f4:bb:da:e0:1c"
           config:
@@ -259,10 +259,10 @@ spec:
       - hostName: "master2.ztp-amx1.amx.com"
         role: "master"
         vendor: Dell
-        bmcAddress: "idrac-virtualmedia://192.168.20.83/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia://192.168.20.103/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "00:90:FA:9A:79:0C"
+        bootMACAddress: "00:90:FA:9A:8D:B4"
         bootMode: "UEFI"
         #bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
@@ -282,7 +282,7 @@ spec:
             - name: "enp5s0f1"
               macAddress: "00:90:FA:9A:84:6C"
             - name: "enp7s0f1"
-              macAddress: "00:90:FA:9A:79:0C"
+              macAddress: "00:90:FA:9A:8D:B4"
             - name: "eno3"
               macAddress: "ec:f4:bb:da:de:d4"
           config:
