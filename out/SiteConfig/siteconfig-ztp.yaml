@@ -20,7 +20,6 @@ spec:
         hostPrefix: 23
     machineNetwork:
       - cidr: 192.168.26.64/26
-    # For 3-node and standard clusters with static IPs, the API and Ingress IPs must be configured here
     apiVIP: 192.168.26.69
     apiVIPs:
       - 192.168.26.69
@@ -31,36 +30,18 @@ spec:
       - 172.30.0.0/16
     additionalNTPSources:
       - 192.168.19.10
-      # - 1111:2222:3333:4444::2
-    # Optionally; This can be used to override the KlusterletAddonConfig that is created for this cluster:
-    #crTemplates:
-    #  KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
-    # Optionally; This can be used to to configure desired BIOS setting on all nodes in this cluster:
-    #biosConfigRef:
-    #  filePath: "example-hw.profile"
-################################################################
     nodes:
       - hostName: "master0.ztp-amx1.amx.com"
         role: "master"
-        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.101/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:90:54"
         bootMode: "UEFI"  
-        #bootMode: "UEFI"  
-        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
-#        rootDeviceHints:
-#          deviceName: "/dev/sda"
-# As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
-        #diskPartition:
-        #  - device: /dev/sda
-        #    partitions:
-        #    - mount_point: /var/recovery
-        #      size: 51200
-        #      start: 800000
+        rootDeviceHints:
+          deviceName: "/dev/sda"
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
@@ -76,9 +57,6 @@ spec:
                 state: up
                 identifier: name
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   dhcp: false
                   address: 
@@ -90,11 +68,7 @@ spec:
               - name: bond0 
                 type: bond
                 state: up
-                identifier: name
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   enabled: false
                 ipv6:
@@ -113,9 +87,6 @@ spec:
                   base-iface: bond0
                   id: 233
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   enabled: true
                   dhcp: false
@@ -150,7 +121,6 @@ spec:
 ############################################################
       - hostName: "master1.ztp-amx1.amx.com"
         role: "master"
-        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.102/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
@@ -160,6 +130,8 @@ spec:
         # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
+        rootDeviceHints:
+          deviceName: "/dev/sda"
 #        rootDeviceHints:
 #          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
@@ -184,9 +156,6 @@ spec:
                 state: up
                 identifier: name
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   dhcp: false
                   address:
@@ -200,9 +169,6 @@ spec:
                 state: up
                 identifier: name
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   enabled: false
                 ipv6:
@@ -221,9 +187,6 @@ spec:
                   base-iface: bond0
                   id: 233
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   enabled: true
                   dhcp: false
@@ -258,16 +221,15 @@ spec:
 ############################################################
       - hostName: "master2.ztp-amx1.amx.com"
         role: "master"
-        vendor: Dell
         bmcAddress: "idrac-virtualmedia://192.168.20.103/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
         bootMACAddress: "00:90:FA:9A:8D:B4"
         bootMode: "UEFI"
-        #bootMode: "UEFI"
-        # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
+        rootDeviceHints:
+          deviceName: "/dev/sda"
 #        rootDeviceHints:
 #          deviceName: "/dev/sda"
 # As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
@@ -292,9 +254,6 @@ spec:
                 state: up
                 identifier: name
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   dhcp: false
                   address:
@@ -308,9 +267,6 @@ spec:
                 state: up
                 identifier: name
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   enabled: false
                 ipv6:
@@ -329,9 +285,6 @@ spec:
                   base-iface: bond0
                   id: 233
                 mtu: 9000
-                min-mtu: 68
-                max-mtu: 65535
-                wait-ip: any
                 ipv4:
                   enabled: true
                   dhcp: false

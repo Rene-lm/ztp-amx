@@ -1,0 +1,74 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "annotations": {
+            "argocd.argoproj.io/sync-wave": "0",
+            "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"argocd.argoproj.io/sync-wave\":\"0\",\"ran.openshift.io/ztp-gitops-generated\":\"{}\"},\"labels\":{\"app.kubernetes.io/instance\":\"ztp-amx1\",\"name\":\"ztp-amx1\"},\"name\":\"ztp-amx1\"}}\n",
+            "openshift.io/sa.scc.mcs": "s0:c26,c20",
+            "openshift.io/sa.scc.supplemental-groups": "1000690000/10000",
+            "openshift.io/sa.scc.uid-range": "1000690000/10000",
+            "ran.openshift.io/ztp-gitops-generated": "{}"
+        },
+        "creationTimestamp": "2025-01-21T17:13:54Z",
+        "deletionTimestamp": "2025-01-21T21:06:26Z",
+        "labels": {
+            "app.kubernetes.io/instance": "ztp-amx1",
+            "cluster.open-cluster-management.io/managedCluster": "ztp-amx1",
+            "kubernetes.io/metadata.name": "ztp-amx1",
+            "name": "ztp-amx1",
+            "open-cluster-management.io/cluster-name": "ztp-amx1",
+            "pod-security.kubernetes.io/audit": "restricted",
+            "pod-security.kubernetes.io/audit-version": "v1.24",
+            "pod-security.kubernetes.io/warn": "restricted",
+            "pod-security.kubernetes.io/warn-version": "v1.24"
+        },
+        "name": "ztp-amx1",
+        "resourceVersion": "192232550",
+        "uid": "19ab0835-8d2b-4065-9d7f-2a697f67a06b"
+    },
+    "spec": {
+        "finalizers": [
+        ]
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2025-01-21T21:06:34Z",
+                "message": "All resources successfully discovered",
+                "reason": "ResourcesDiscovered",
+                "status": "False",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2025-01-21T21:06:34Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2025-01-21T21:06:34Z",
+                "message": "All content successfully deleted, may be waiting on finalization",
+                "reason": "ContentDeleted",
+                "status": "False",
+                "type": "NamespaceDeletionContentFailure"
+            },
+            {
+                "lastTransitionTime": "2025-01-21T21:06:34Z",
+                "message": "Some resources are remaining: agentclusterinstalls.extensions.hive.openshift.io has 1 resource instances, clusterdeployments.hive.openshift.io has 1 resource instances, infraenvs.agent-install.openshift.io has 1 resource instances",
+                "reason": "SomeResourcesRemain",
+                "status": "True",
+                "type": "NamespaceContentRemaining"
+            },
+            {
+                "lastTransitionTime": "2025-01-21T21:06:34Z",
+                "message": "Some content in the namespace has finalizers remaining: agentclusterinstall.agent-install.openshift.io/ai-deprovision in 1 resource instances, clusterdeployments.agent-install.openshift.io/ai-deprovision in 1 resource instances, infraenv.agent-install.openshift.io/ai-deprovision in 1 resource instances",
+                "reason": "SomeFinalizersRemain",
+                "status": "True",
+                "type": "NamespaceFinalizersRemaining"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}
