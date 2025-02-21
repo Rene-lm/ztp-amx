@@ -19,13 +19,13 @@ spec:
       - cidr: 10.128.0.0/14
         hostPrefix: 23
     machineNetwork:
-      - cidr: 192.168.49.96/27
-    apiVIP: 192.168.49.99
+      - cidr: 192.168.26.64/26
+    apiVIP: 192.168.26.69
     apiVIPs:
-      - 192.168.49.99
-    ingressVIP: 192.168.49.100
+      - 192.168.26.69
+    ingressVIP: 192.168.26.70
     ingressVIPs:
-      - 192.168.49.100
+      - 192.168.26.70
     serviceNetwork:
       - 172.30.0.0/16
     additionalNTPSources:
@@ -33,11 +33,11 @@ spec:
     nodes:
       - hostName: "master0.ztp-amx1.amx.com"
         role: "master"
-        bmcAddress: "idrac-virtualmedia://192.168.31.13/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia://192.168.20.101/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "B4:83:51:03:F0:8E"
-        bootMode: "UEFI"  
+        bootMACAddress: "00:90:FA:9A:90:54"
+        bootMode: "legacy"  
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
         rootDeviceHints:
@@ -45,11 +45,26 @@ spec:
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "B4:83:51:03:F0:8E"
+              macAddress: "00:90:FA:9A:8C:14"
             - name: "enp7s0f1"
-              macAddress: "B4:83:51:03:F0:78"
+              macAddress: "00:90:FA:9A:90:54"
+            - name: "eno3"
+              macAddress: "ec:f4:bb:db:2b:c4"
           config:
             interfaces:
+              - name: eno3
+                type: ethernet
+                state: up
+                identifier: name
+                mtu: 9000
+                ipv4:
+                  dhcp: false
+                  address: 
+                  - ip: 192.168.26.9
+                    prefix-length: 27
+                  enabled: true
+                ipv6:
+                  enabled: false
               - name: bond0 
                 type: bond
                 state: up
@@ -65,19 +80,19 @@ spec:
                   port:
                   - enp5s0f1
                   - enp7s0f1
-              - name: vlan25 
+              - name: bond0.233 
                 type: vlan
                 state: up
                 vlan:
                   base-iface: bond0
-                  id: 25
+                  id: 233
                 mtu: 9000
                 ipv4:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.49.105
-                    prefix-length: 27
+                  - ip: 192.168.26.73
+                    prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
                 state: up
@@ -101,103 +116,54 @@ spec:
             routes:
               config:
                 - destination: 0.0.0.0/0
-                  next-hop-address: 192.168.49.97
-                  next-hop-interface: vlan25
+                  next-hop-address: 192.168.26.65
+                  next-hop-interface: bond0.233
 ############################################################
       - hostName: "master1.ztp-amx1.amx.com"
         role: "master"
-        bmcAddress: "idrac-virtualmedia://192.168.31.14/redfish/v1/Systems/System.Embedded.1"
+        bmcAddress: "idrac-virtualmedia://192.168.20.102/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
           name: "bmh-secret"
-        bootMACAddress: "B4:83:51:03:F2:EC"
-        bootMode: "UEFI"
+        bootMACAddress: "00:90:FA:9A:8A:54"
+        bootMode: "legacy"
         #bootMode: "UEFI"
         # Use UEFI to enable secure boot for this node
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
         rootDeviceHints:
           deviceName: "/dev/sda"
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
+# As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
+        #diskPartition:
+        #  - device: /dev/sda
+        #    partitions:
+        #    - mount_point: /var/recovery
+        #      size: 51200
+        #      start: 800000
         nodeNetwork:
           interfaces:
             - name: "enp5s0f1"
-              macAddress: "B4:83:51:03:F2:EC"
+              macAddress: "00:90:FA:9A:78:5C"
             - name: "enp7s0f1"
-              macAddress: "B4:83:51:03:F6:E4"
+              macAddress: "00:90:FA:9A:8A:54"
+            - name: "eno3"
+              macAddress: "ec:f4:bb:da:e0:1c"
           config:
             interfaces:
-              - name: bond0
-                type: bond
+              - name: eno3
+                type: ethernet
                 state: up
+                identifier: name
                 mtu: 9000
                 ipv4:
-                  enabled: false
-                ipv6:
-                  enabled: false
-                link-aggregation:
-                  mode: 802.3ad
-                  options:
-                    miimon: 100
-                  port:
-                  - enp5s0f1
-                  - enp7s0f1
-              - name: vlan25
-                type: vlan
-                state: up
-                vlan:
-                  base-iface: bond0
-                  id: 25
-                mtu: 9000
-                ipv4:
-                  enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.49.106
+                  - ip: 192.168.26.10
                     prefix-length: 27
-              - name: enp5s0f1
-                type: ethernet
-                state: up
-                ipv4:
-                  address:
-                  enabled: false
+                  enabled: true
                 ipv6:
                   enabled: false
-              - name: enp7s0f1
-                type: ethernet
-                state: up
-                ipv4:
-                  address:
-                  enabled: false
-                ipv6:
-                  enabled: false
-            dns-resolver:
-              config:
-                server:
-                  - 192.168.26.82
-            routes:
-              config:
-                - destination: 0.0.0.0/0
-                  next-hop-address: 192.168.49.97
-                  next-hop-interface: vlan25
-############################################################
-      - hostName: "master2.ztp-amx1.amx.com"
-        role: "master"
-        bmcAddress: "idrac-virtualmedia://192.168.31.15/redfish/v1/Systems/System.Embedded.1"
-        bmcCredentialsName:
-          name: "bmh-secret"
-        bootMACAddress: "B4:83:51:03:F6:A0"
-        bootMode: "UEFI"
-        nodeLabels:
-          cluster.ocs.openshift.io/openshift-storage: ""
-        rootDeviceHints:
-          deviceName: "/dev/sda"
-        nodeNetwork:
-          interfaces:
-            - name: "enp5s0f1"
-              macAddress: "B4:83:51:03:F6:A0"
-            - name: "enp7s0f1"
-              macAddress: "B4:83:51:03:F3:5A"
-          config:
-            interfaces:
               - name: bond0
                 type: bond
                 state: up
@@ -214,19 +180,19 @@ spec:
                   port:
                   - enp5s0f1
                   - enp7s0f1
-              - name: vlan25
+              - name: bond0.233
                 type: vlan
                 state: up
                 vlan:
                   base-iface: bond0
-                  id: 25
+                  id: 233
                 mtu: 9000
                 ipv4:
                   enabled: true
                   dhcp: false
                   address:
-                  - ip: 192.168.49.107
-                    prefix-length: 27
+                  - ip: 192.168.26.74
+                    prefix-length: 26
               - name: enp5s0f1
                 type: ethernet
                 state: up
@@ -250,5 +216,103 @@ spec:
             routes:
               config:
                 - destination: 0.0.0.0/0
-                  next-hop-address: 192.168.49.97
-                  next-hop-interface: vlan25
+                  next-hop-address: 192.168.26.65
+                  next-hop-interface: bond0.233
+############################################################
+      - hostName: "master2.ztp-amx1.amx.com"
+        role: "master"
+        bmcAddress: "idrac-virtualmedia://192.168.20.103/redfish/v1/Systems/System.Embedded.1"
+        bmcCredentialsName:
+          name: "bmh-secret"
+        bootMACAddress: "00:90:FA:9A:8D:B4"
+        bootMode: "legacy"
+        nodeLabels:
+          cluster.ocs.openshift.io/openshift-storage: ""
+        rootDeviceHints:
+          deviceName: "/dev/sda"
+#        rootDeviceHints:
+#          deviceName: "/dev/sda"
+# As per: https://docs.openshift.com/container-platform/4.11/scalability_and_performance/cnf-talm-for-cluster-upgrades.html#cnf-about-topology-aware-lifecycle-manager-config_cnf-topology-aware-lifecycle-manager
+        #diskPartition:
+        #  - device: /dev/sda
+        #    partitions:
+        #    - mount_point: /var/recovery
+        #      size: 51200
+        #      start: 800000
+        nodeNetwork:
+          interfaces:
+            - name: "enp5s0f1"
+              macAddress: "00:90:FA:9A:84:6C"
+            - name: "enp7s0f1"
+              macAddress: "00:90:FA:9A:8D:B4"
+            - name: "eno3"
+              macAddress: "ec:f4:bb:da:de:d4"
+          config:
+            interfaces:
+              - name: eno3
+                type: ethernet
+                state: up
+                identifier: name
+                mtu: 9000
+                ipv4:
+                  dhcp: false
+                  address:
+                  - ip: 192.168.26.11
+                    prefix-length: 27
+                  enabled: true
+                ipv6:
+                  enabled: false
+              - name: bond0
+                type: bond
+                state: up
+                identifier: name
+                mtu: 9000
+                ipv4:
+                  enabled: false
+                ipv6:
+                  enabled: false
+                link-aggregation:
+                  mode: 802.3ad
+                  options:
+                    miimon: 100
+                  port:
+                  - enp5s0f1
+                  - enp7s0f1
+              - name: bond0.233
+                type: vlan
+                state: up
+                vlan:
+                  base-iface: bond0
+                  id: 233
+                mtu: 9000
+                ipv4:
+                  enabled: true
+                  dhcp: false
+                  address:
+                  - ip: 192.168.26.75
+                    prefix-length: 26
+              - name: enp5s0f1
+                type: ethernet
+                state: up
+                ipv4:
+                  address:
+                  enabled: false
+                ipv6:
+                  enabled: false
+              - name: enp7s0f1
+                type: ethernet
+                state: up
+                ipv4:
+                  address:
+                  enabled: false
+                ipv6:
+                  enabled: false
+            dns-resolver:
+              config:
+                server:
+                  - 192.168.26.82
+            routes:
+              config:
+                - destination: 0.0.0.0/0
+                  next-hop-address: 192.168.26.65
+                  next-hop-interface: bond0.233
