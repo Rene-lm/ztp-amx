@@ -33,7 +33,7 @@ spec:
     proxy:
       httpProxy: "http://192.168.26.2:3128"
       httpsProxy: "http://192.168.26.2:3128"
-      noProxy: "127.0.0.1,localhost,192.168.26.82,192.168.26.81,192.168.26.69,192.168.26.70,.amx.com,192.168.26.2,192.168.29.202,192.168.29.193,192.168.20.87,192.168.26.5,192.168.49.96/27"
+      noProxy: "127.0.0.1,localhost,192.168.26.82,192.168.26.81,192.168.26.69,192.168.26.70,.amx.com,192.168.26.2,192.168.29.202,192.168.29.193,192.168.20.87,192.168.26.5,192.168.49.96/27,192.168.26.64/26,192.168.26.0/27"
     nodes:
       - hostName: "master0.ztp-amx1.amx.com"
         role: "master"
@@ -48,9 +48,9 @@ spec:
           deviceName: "/dev/sda"
         nodeNetwork:
           interfaces:
-            - name: "enp5s0f1"
+            - name: "ens1f0"
               macAddress: "B4:83:51:03:F0:8E"
-            - name: "enp7s0f1"
+            - name: "ens2f0"
               macAddress: "B4:83:51:03:F0:78"
           config:
             interfaces:
@@ -67,8 +67,8 @@ spec:
                   options:
                     miimon: 100
                   port:
-                  - enp5s0f1
-                  - enp7s0f1
+                  - ens1f0
+                  - ens2f0
               - name: vlan25 
                 type: vlan
                 state: up
@@ -82,7 +82,7 @@ spec:
                   address:
                   - ip: 192.168.49.105
                     prefix-length: 27
-              - name: enp5s0f1
+              - name: ens1f0
                 type: ethernet
                 state: up
                 ipv4:
@@ -90,7 +90,7 @@ spec:
                   enabled: false
                 ipv6:
                   enabled: false
-              - name: enp7s0f1
+              - name: ens2f0
                 type: ethernet
                 state: up
                 ipv4:
@@ -123,9 +123,9 @@ spec:
           deviceName: "/dev/sda"
         nodeNetwork:
           interfaces:
-            - name: "enp5s0f1"
+            - name: "ens1f0"
               macAddress: "B4:83:51:03:F2:EC"
-            - name: "enp7s0f1"
+            - name: "ens2f0"
               macAddress: "B4:83:51:03:F6:E4"
           config:
             interfaces:
@@ -142,8 +142,8 @@ spec:
                   options:
                     miimon: 100
                   port:
-                  - enp5s0f1
-                  - enp7s0f1
+                  - ens1f0
+                  - ens2f0
               - name: vlan25
                 type: vlan
                 state: up
@@ -157,7 +157,7 @@ spec:
                   address:
                   - ip: 192.168.49.106
                     prefix-length: 27
-              - name: enp5s0f1
+              - name: ens1f0
                 type: ethernet
                 state: up
                 ipv4:
@@ -165,7 +165,7 @@ spec:
                   enabled: false
                 ipv6:
                   enabled: false
-              - name: enp7s0f1
+              - name: ens2f0
                 type: ethernet
                 state: up
                 ipv4:
@@ -196,9 +196,9 @@ spec:
           deviceName: "/dev/sda"
         nodeNetwork:
           interfaces:
-            - name: "enp5s0f1"
+            - name: "ens1f0"
               macAddress: "B4:83:51:03:F6:A0"
-            - name: "enp7s0f1"
+            - name: "ens2f0"
               macAddress: "B4:83:51:03:F3:5A"
           config:
             interfaces:
@@ -216,8 +216,8 @@ spec:
                   options:
                     miimon: 100
                   port:
-                  - enp5s0f1
-                  - enp7s0f1
+                  - ens1f0
+                  - ens2f0
               - name: vlan25
                 type: vlan
                 state: up
@@ -231,7 +231,7 @@ spec:
                   address:
                   - ip: 192.168.49.107
                     prefix-length: 27
-              - name: enp5s0f1
+              - name: ens1f0
                 type: ethernet
                 state: up
                 ipv4:
@@ -239,7 +239,7 @@ spec:
                   enabled: false
                 ipv6:
                   enabled: false
-              - name: enp7s0f1
+              - name: ens2f0
                 type: ethernet
                 state: up
                 ipv4:
