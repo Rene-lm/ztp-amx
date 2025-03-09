@@ -1,8 +1,8 @@
 apiVersion: ran.openshift.io/v1
 kind: SiteConfig
 metadata:
-  name: "ztp-amx1"
-  namespace: "ztp-amx1"
+  name: "core-cluster"
+  namespace: "core-cluster"
 spec:
   baseDomain: "amx.com"
   pullSecretRef:
@@ -10,11 +10,11 @@ spec:
   clusterImageSetNameRef: "img4.14.48-x86-64-appsub"
   sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMhXg/nJGNxkb0XTzu+asl7Q0iwLJFvkSzXXiUgJIDfyICnePgGOsdNawLtLkXai+JWNdYdgv9MLaHD85UEjN9/Dzd428Pl2lNjCnLAiYVOrzAQAnjmh8N+YLgUkS/U3iicpYyJRKv7RCnHK86+gaghU1xSyvIQ3y08ePmD3KP7A/qQ8GWAs3Qu/ohA8UwI6xFZvi32EUHyUOFu4SPwXlqUQ5LP4KV3IlwoilaVc11JXv0ijus1mvvrXqeCPD0tyy7RbLxOTt2d/Ndv0a4l1c7/HdWKcdyFXkdBOc6CpkzrMhnxBv3HIRVIgineVO6U1+6sdSeqJjRixCiBp5xxaMhg3nMkT/IYdv377VK0DfEZBlqHxgeMFR2O+FqTHeJbEMf2+tuCUhSsG1UQ9cODo1CgygnTbAIfCl97tuki6698dRJqNfC5xbzIlZADZgLO86s6vH/oPUQIt4bvrHywvSXXwA62oEXbhriUwkE1GuCJA4sCyZaRYNSi1C61KSYQOM= root@kvmpre01.mgmt-pre.amx.com"
   clusters:
-  - clusterName: "ztp-amx1"
+  - clusterName: "core-cluster"
     networkType: "OVNKubernetes"
     holdinstallation: false
     clusterLabels:
-      cluster: ztp-amx1
+      cluster: core-cluster
     clusterNetwork:
       - cidr: 10.128.0.0/14
         hostPrefix: 23
@@ -35,7 +35,7 @@ spec:
       httpsProxy: "http://192.168.26.2:3128"
       noProxy: "127.0.0.1,localhost,192.168.26.82,192.168.26.81,192.168.26.69,192.168.26.70,.amx.com,192.168.26.2,192.168.29.202,192.168.29.193,192.168.20.87,192.168.26.5,192.168.49.96/27,192.168.26.64/26,192.168.26.0/27"
     nodes:
-      - hostName: "master0.ztp-amx1.amx.com"
+      - hostName: "master0.core-cluster.amx.com"
         role: "master"
         bmcAddress: "idrac-virtualmedia://192.168.31.13/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
@@ -108,7 +108,7 @@ spec:
                   next-hop-address: 192.168.49.97
                   next-hop-interface: vlan25
 ############################################################
-      - hostName: "master1.ztp-amx1.amx.com"
+      - hostName: "master1.core-cluster.amx.com"
         role: "master"
         bmcAddress: "idrac-virtualmedia://192.168.31.14/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
@@ -183,7 +183,7 @@ spec:
                   next-hop-address: 192.168.49.97
                   next-hop-interface: vlan25
 ############################################################
-      - hostName: "master2.ztp-amx1.amx.com"
+      - hostName: "master2.core-cluster.amx.com"
         role: "master"
         bmcAddress: "idrac-virtualmedia://192.168.31.15/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
