@@ -15,8 +15,8 @@ spec:
   - namespace: '*'
     server: '*'
   namespaceResourceWhitelist:
-  - group: ''
-    kind: ConfigMap
+          #  - group: ''
+          #kind: ConfigMap
   - group: ''
     kind: Namespace
   - group: ''
