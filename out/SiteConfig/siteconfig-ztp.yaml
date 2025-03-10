@@ -4,9 +4,6 @@ metadata:
   name: "core-cluster"
   namespace: "core-cluster"
 spec:
-  extraManifests:
-    searchPaths:
-     - dummy/
   baseDomain: "amx.com"
   pullSecretRef:
     name: "assisted-deployment-pull-secret"
