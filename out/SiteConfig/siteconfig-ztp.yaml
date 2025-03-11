@@ -48,7 +48,7 @@ spec:
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
         rootDeviceHints:
-          deviceName: "/dev/sda"
+          wwn: "0x6f4ee08042d47b002b1205e50db8e08b"
         nodeNetwork:
           interfaces:
             - name: "ens1f0"
@@ -123,7 +123,7 @@ spec:
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
         rootDeviceHints:
-          deviceName: "/dev/sda"
+          wwn: "0x6f4ee0804450b2002b128dcaa5dc1f70"
         nodeNetwork:
           interfaces:
             - name: "ens1f0"
@@ -196,7 +196,7 @@ spec:
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
         rootDeviceHints:
-          deviceName: "/dev/sda"
+          wwn: "0x6f4ee080444e9f002b122065d6822730"
         nodeNetwork:
           interfaces:
             - name: "ens1f0"
