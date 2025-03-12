@@ -38,6 +38,79 @@ spec:
       httpsProxy: "http://192.168.26.2:3128"
       noProxy: "127.0.0.1,localhost,192.168.26.82,192.168.26.81,192.168.26.69,192.168.26.70,.amx.com,192.168.26.2,192.168.29.202,192.168.29.193,192.168.20.87,192.168.26.5,192.168.49.96/27,192.168.26.64/26,192.168.26.0/27"
     nodes:
+      - hostName: "master0.core-cluster.amx.com"
+        role: "master"
+        bmcAddress: "idrac-virtualmedia://192.168.31.13/redfish/v1/Systems/System.Embedded.1"
+        bmcCredentialsName:
+          name: "bmh-secret"
+        bootMACAddress: "B4:83:51:03:F0:8E"
+        bootMode: "UEFI"  
+        nodeLabels:
+          cluster.ocs.openshift.io/openshift-storage: ""
+        rootDeviceHints:
+          wwn: "0x6f4ee08042d47b002b1205e50db8e08b"
+        nodeNetwork:
+          interfaces:
+            - name: "ens1f0"
+              macAddress: "B4:83:51:03:F0:8E"
+            - name: "ens2f0"
+              macAddress: "B4:83:51:03:F0:78"
+          config:
+            interfaces:
+              - name: bond0 
+                type: bond
+                state: up
+                mtu: 9000
+                ipv4:
+                  enabled: false
+                ipv6:
+                  enabled: false
+                link-aggregation:
+                  mode: active-backup
+                  options:
+                    miimon: 100
+                  port:
+                  - ens1f0
+                  - ens2f0
+              - name: vlan25 
+                type: vlan
+                state: up
+                vlan:
+                  base-iface: bond0
+                  id: 25
+                mtu: 9000
+                ipv4:
+                  enabled: true
+                  dhcp: false
+                  address:
+                  - ip: 192.168.49.105
+                    prefix-length: 27
+              - name: ens1f0
+                type: ethernet
+                state: up
+                ipv4:
+                  address:
+                  enabled: false
+                ipv6:
+                  enabled: false
+              - name: ens2f0
+                type: ethernet
+                state: up
+                ipv4:
+                  address:
+                  enabled: false
+                ipv6:
+                  enabled: false
+            dns-resolver:
+              config:
+                server:
+                  - 192.168.26.82
+            routes:
+              config:
+                - destination: 0.0.0.0/0
+                  next-hop-address: 192.168.49.97
+                  next-hop-interface: vlan25
+############################################################
       - hostName: "master1.core-cluster.amx.com"
         role: "master"
         bmcAddress: "idrac-virtualmedia://192.168.31.14/redfish/v1/Systems/System.Embedded.1"
