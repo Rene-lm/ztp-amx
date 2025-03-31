@@ -1,0 +1,15 @@
+---
+apiVersion: ran.openshift.io/v1
+kind: PolicyGenTemplate
+metadata:
+  name: "core-cluster-policies"
+  namespace: "core-cluster-policies"
+spec:
+  bindingRules:
+    # These policies will correspond to all clusters with this label:
+    cluster: core-cluster
+  remediationAction: enforce
+  sourceFiles:
+    # Create operators policies that will be installed in all clusters
+    - fileName: routeviahost.yaml
+      policyName: "routeviahost-policy"

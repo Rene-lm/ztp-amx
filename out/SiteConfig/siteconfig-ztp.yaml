@@ -7,7 +7,7 @@ spec:
   extraManifests:
     searchPaths:
      - extra-manifests/
-  baseDomain: "amx.com"
+  baseDomain: "ztplab.com"
   pullSecretRef:
     name: "assisted-deployment-pull-secret"
   clusterImageSetNameRef: "img4.14.48-x86-64-appsub"
@@ -36,9 +36,9 @@ spec:
     proxy:
       httpProxy: "http://192.168.26.2:3128"
       httpsProxy: "http://192.168.26.2:3128"
-      noProxy: "127.0.0.1,localhost,192.168.26.82,192.168.26.81,192.168.26.69,192.168.26.70,.amx.com,192.168.26.2,192.168.29.202,192.168.29.193,192.168.20.87,192.168.26.5,192.168.49.96/27,192.168.26.64/26,192.168.26.0/27"
+      noProxy: "127.0.0.1,localhost,192.168.26.82,192.168.26.81,192.168.26.69,192.168.26.70,.ztplab.com,192.168.26.2,192.168.29.202,192.168.29.193,192.168.20.87,192.168.26.5,192.168.49.96/27,192.168.26.64/26,192.168.26.0/27"
     nodes:
-      - hostName: "master0.core-cluster.amx.com"
+      - hostName: "master0.core-cluster.ztplab.com"
         role: "master"
         bmcAddress: "idrac-virtualmedia://192.168.31.13/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
@@ -111,7 +111,7 @@ spec:
                   next-hop-address: 192.168.49.97
                   next-hop-interface: vlan25
 ############################################################
-      - hostName: "master1.core-cluster.amx.com"
+      - hostName: "master1.core-cluster.ztplab.com"
         role: "master"
         bmcAddress: "idrac-virtualmedia://192.168.31.14/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:
@@ -186,7 +186,7 @@ spec:
                   next-hop-address: 192.168.49.97
                   next-hop-interface: vlan25
 ############################################################
-      - hostName: "master2.core-cluster.amx.com"
+      - hostName: "master2.core-cluster.ztplab.com"
         role: "master"
         bmcAddress: "idrac-virtualmedia://192.168.31.15/redfish/v1/Systems/System.Embedded.1"
         bmcCredentialsName:

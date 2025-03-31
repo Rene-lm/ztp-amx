@@ -7,3 +7,5 @@ resources:
   - gitops-cluster-rolebinding.yaml
   - clusters-app.yaml
   - secret-ztp.yaml
+  - policies-app.yaml
+  - policies-app-project.yaml

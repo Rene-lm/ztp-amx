@@ -1,0 +1,5 @@
+generators:
+- policy-core-cluster.yaml
+
+resources:
+- ns-core-cluster.yaml
