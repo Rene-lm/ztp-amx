@@ -270,7 +270,7 @@ spec:
         nodeLabels:
           cluster.ocs.openshift.io/openshift-storage: ""
         rootDeviceHints:
-          wwn: "0x6f4ee080444e9f002b122065d6822730"
+          wwn: "0x6f4ee08042d42e002b120bdf0617a5c8"
         nodeNetwork:
           interfaces:
             - name: "ens1f0"
